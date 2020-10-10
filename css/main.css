@@ -1,1 +1,225 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  background: url("../asset/images/bg-bottom.svg") left bottom no-repeat, url("../asset/images/bg-top.svg") right top no-repeat;
+  background-color: #f6f6fe;
+  font-family: 'Montserrat';
+  color: #6d708d;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  margin-top: 8em;
+  margin-bottom: 1em;
+}
+
+.header__title {
+  margin-bottom: 1.38em;
+  color: #6d708d;
+  font-size: 2.1em;
+  letter-spacing: 0.4px;
+}
+
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.switch__labble {
+  color: #b3b5c6;
+}
+
+.switch__labble--left {
+  margin-right: 1.5em;
+}
+
+.switch__labble--right {
+  margin-left: 1.5em;
+}
+
+.switch__btn {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 32px;
+}
+
+.switch__btn--input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch__btn--input:checked + .switch__btn__slider {
+  background-color: #2196F3;
+}
+
+.switch__btn--input:checked + .switch__btn__slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch__btn--input:focus + .switch__btn__slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+.switch__btn--slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch__btn--slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.group-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3.3em;
+}
+
+.card {
+  background-color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 3.96em;
+}
+
+.card__title {
+  font-size: 1.2em;
+  margin-bottom: 1.58em;
+}
+
+.card__price-group {
+  color: #494c5f;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.1em;
+}
+
+.card__price-group--annually {
+  display: none;
+}
+
+.card__price-group--monthly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__price-group--middle {
+  color: white;
+}
+
+.card__price {
+  font-size: 2.7em;
+}
+
+.card__amount {
+  font-size: 4.8em;
+}
+
+.card__amount--annually {
+  display: none;
+}
+
+.card__amount--monthly {
+  display: inline-block;
+}
+
+.card__amount--middle {
+  color: white;
+}
+
+.card__info {
+  font-size: 1.021em;
+  border-top: solid #e2e3e9 1px;
+  padding-top: 1.205em;
+  padding-bottom: 1.205em;
+}
+
+.card__info--middle {
+  border-top: solid #b3b5c6 1px;
+}
+
+.card > p:last-of-type {
+  border-bottom: solid #e2e3e9 1px;
+  margin-bottom: 3em;
+}
+
+.card--middle > p:last-of-type {
+  border-bottom: solid #b3b5c6 1px;
+}
+
+.card__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(left, #a3a8f0, #696fdd);
+}
+
+.card__link--middle {
+  background: white;
+}
+
+.card--middle {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(top, #a3a8f0, #696fdd);
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

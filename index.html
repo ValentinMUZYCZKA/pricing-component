@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
-
   <script src="./bower_components/gsap/dist/gsap.js"></script>
   <script src="./js/main.js" defer></script>
   <title>Frontend Mentor | [Challenge Name Here]</title>
@@ -14,38 +15,74 @@
 
 </head>
 <body>
-
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
+  <div class="container">
+    <section class="header">
+      <h1 class="header__title">Our Pricing</h1>
+      <div class="switch">
+        <p class="switch__labble switch__labble--left">Annually</p>
+        <label class="switch__btn">
+          <input class="switch__btn--input" type="checkbox">
+          <span class="switch__btn--slider"></span>
+        </label>
+        <p class="switch__labble switch__labble--right">Monthly</p>
+      </div>
+      
+    </section>
+    <main class="group-cards">
+      <section class="card">
+        <h2 class="card__title">Basic</h2>
+        <div class="card__price-group card__price-group--monthly">
+          <span class="card__price card__price--monthly">&dollar;</span>
+          <p class="card__amount card__amount--monthly">19.99</p>
+        </div>
+        <div class="card__price-group card__price-group--annually">
+          <span class="card__price card__price--annually">&dollar;</span>
+          <p class="card__amount card__amount--annually">199.99</p>
+        </div>
+        <p class="card__info">500 GB Storage</p>
+        <p class="card__info">2 Users Allowed</p>
+        <p class="card__info">Send up to 3 GB</p>
+        <a href="#" class="card__link">Learn More</a>     
+      </section>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <section class="card card--middle">
+        <h2 class="card__title">Professional</h2>
+        <div class="card__price-group card__price-group--middle card__price-group--monthly">
+          <span class="card__price card__price--monthly">&dollar;</span>
+          <p class="card__amount card__amount--monthly">24.99</p>
+        </div>
+        <div class="card__price-group card__price-group--middle card__price-group--annually">
+          <span class="card__price card__price--annually">&dollar;</span>
+          <p class="card__amount card__amount--annually">249.99</p>
+        </div>
+        <p class="card__info card__info--middle">1 TB Storage</p>
+        <p class="card__info card__info--middle">5 Users Allowed</p>
+        <p class="card__info card__info--middle">Send up to 10 GB</p>
+        <a href="#" class="card__link card__link--middle">Learn More</a>     
+      </section>
+  
+      <section class="card">
+        <h2 class="card__title">Master</h2>
+        <div class="card__price-group card__price-group--monthly">
+          <span class="card__price card__price--monthly">&dollar;</span>
+          <p class="card__amount card__amount--monthly">39.99</p>
+        </div>
+        <div class="card__price-group card__price-group--annually">
+          <span class="card__price card__price--annually">&dollar;</span>
+          <p class="card__amount card__amount--annually">399.99</p>
+        </div>
+        <p class="card__info">2 TB Storage</p>
+        <p class="card__info">10 Users Allowed</p>
+        <p class="card__info">Send up to 20 GB</p>
+        <a href="#" class="card__link">Learn More</a>     
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </div>
+
+
 </body>
 </html>
