@@ -234,6 +234,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 0.9em;
+  color: white;
 }
 
 .card__link--middle {
@@ -253,7 +254,7 @@ body {
 
 @media screen and (max-width: 375px) {
   body {
-    background-color: #f7f7f7;
+    background-color: rgba(247, 247, 247, 0.993);
   }
   .container {
     background: url("../asset/images/bg-top.svg") 195px -40px no-repeat;
