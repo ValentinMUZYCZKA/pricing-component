@@ -24,7 +24,7 @@ body {
 }
 
 .header {
-  margin-top: 5.15em;
+  margin-top: 5em;
   margin-bottom: 1em;
 }
 
@@ -74,13 +74,13 @@ body {
 }
 
 .switch__btn--input:hover + .switch__btn--slider {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(163, 168, 240, 0.5)), to(rgba(105, 111, 221, 0.5)));
-  background: linear-gradient(left, rgba(163, 168, 240, 0.5), rgba(105, 111, 221, 0.5));
+  background: -webkit-gradient(linear, right top, left top, from(rgba(163, 168, 240, 0.5)), to(rgba(105, 111, 221, 0.5)));
+  background: linear-gradient(to left, rgba(163, 168, 240, 0.5), rgba(105, 111, 221, 0.5));
 }
 
 .switch__btn--input:checked + .switch__btn--slider {
-  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(left, #a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, right top, left top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to left, #a3a8f0, #696fdd);
 }
 
 .switch__btn--input:checked + .switch__btn--slider:before {
@@ -100,8 +100,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(left, #a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, right top, left top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to left, #a3a8f0, #696fdd);
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 34px;
@@ -128,8 +128,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 3.3em;
   margin-bottom: 8em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card {
@@ -221,8 +226,8 @@ body {
 .card__btn {
   padding-top: 1em;
   padding-bottom: 1em;
-  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(left, #a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, right top, left top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to left, #a3a8f0, #696fdd);
   border-radius: 7px;
 }
 
@@ -247,8 +252,8 @@ body {
   margin-bottom: 0;
   padding-top: 3.9em;
   padding-bottom: 3.57em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(top, #a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to top, #a3a8f0, #696fdd);
   color: white;
 }
 

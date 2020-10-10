@@ -18,7 +18,7 @@ body{
     url('../asset/images/bg-top.svg') right top no-repeat;
 }
 .header{
-    margin-top: 5.15em;
+    margin-top: 5em;
     margin-bottom: 1em;
     &__title{
         margin-bottom: 1.38em;
@@ -101,8 +101,10 @@ body{
 .group-cards{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 3.3em;
     margin-bottom: 8em;
+    justify-content: center;
 }
 .card{
     border-radius: 10PX;
