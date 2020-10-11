@@ -216,7 +216,7 @@ body {
 
 .card > p:last-of-type {
   border-bottom: solid #e2e3e9 1px;
-  margin-bottom: 2.07em;
+  margin-bottom: 2.08em;
 }
 
 .card--middle > p:last-of-type {
@@ -224,15 +224,35 @@ body {
 }
 
 .card__btn {
-  padding-top: 0.99em;
-  padding-bottom: 0.99em;
+  padding-top: 0.98em;
+  padding-bottom: 0.98em;
   background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
   border-radius: 7px;
+  border: solid white 1px;
+}
+
+.card__btn:hover {
+  background: white;
+  border: solid #696fdd 1px;
+}
+
+.card__btn:hover .card__link {
+  color: #696fdd;
 }
 
 .card__btn--middle {
   background: white;
+  border: solid white 1px;
+}
+
+.card__btn--middle:hover {
+  background: #696fdd;
+  border: solid white 1px;
+}
+
+.card__btn--middle:hover .card__link--middle {
+  color: white;
 }
 
 .card__link {
@@ -255,6 +275,10 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to bottom, #a3a8f0, #696fdd);
   color: white;
+}
+
+.card > a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 375px) {
