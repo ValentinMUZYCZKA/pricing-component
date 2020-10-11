@@ -1,6 +1,6 @@
 body {
   background-color: #f6f6fe;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #6d708d;
   font-size: 15px;
   font-weight: 700;
@@ -10,16 +10,9 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background: url("../asset/images/bg-bottom.svg") left bottom no-repeat, url("../asset/images/bg-top.svg") right top no-repeat;
 }
 
@@ -27,7 +20,6 @@ body {
   margin-top: 5em;
   margin-bottom: 1em;
 }
-
 .header__title {
   margin-bottom: 1.38em;
   color: #6d708d;
@@ -36,63 +28,44 @@ body {
 }
 
 .switch {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 .switch__labble {
   color: #b3b5c6;
 }
-
 .switch__labble--left {
   margin-right: 1.5em;
 }
-
 .switch__labble--right {
   margin-left: 1.5em;
 }
-
 .switch__btn {
   position: relative;
   display: inline-block;
   width: 58px;
   height: 32px;
 }
-
 .switch__btn--input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 .switch__btn--input:hover + .switch__btn--slider {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(163, 168, 240, 0.5)), to(rgba(105, 111, 221, 0.5)));
   background: linear-gradient(to right, rgba(163, 168, 240, 0.5), rgba(105, 111, 221, 0.5));
 }
-
 .switch__btn--input:checked + .switch__btn--slider {
-  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
 }
-
 .switch__btn--input:checked + .switch__btn--slider:before {
   -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 .switch__btn--input:focus + .switch__btn--slider {
-  -webkit-box-shadow: 0 0 1px #2196F3;
-          box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196F3;
 }
-
 .switch__btn--slider {
   position: absolute;
   cursor: pointer;
@@ -100,13 +73,11 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 34px;
 }
-
 .switch__btn--slider:before {
   position: absolute;
   content: "";
@@ -115,26 +86,18 @@ body {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 50%;
 }
 
 .group-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 3.3em;
   margin-bottom: 8em;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .card {
@@ -150,109 +113,80 @@ body {
   padding-top: 2.45em;
   padding-bottom: 0em;
 }
-
 .card__title {
   font-size: 1.2em;
   margin-bottom: 1.58em;
 }
-
 .card__price-group {
   color: #494c5f;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 2.1em;
   min-height: 4.8em;
 }
-
 .card__price-group--monthly {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .card__price-group--middle {
   margin-bottom: 2.15em;
   color: white;
 }
-
 .card__price {
   font-size: 2.7em;
 }
-
 .card__amount {
   font-size: 4.8em;
 }
-
 .card__amount--annually {
   display: none;
 }
-
 .card__amount--monthly {
   display: inline-block;
 }
-
 .card__amount--middle {
   color: white;
 }
-
 .card__info {
   font-size: 1.021em;
   border-top: solid #e2e3e9 1px;
   padding-top: 1.205em;
   padding-bottom: 1.205em;
 }
-
 .card__info--middle {
   border-top: solid #b3b5c6 1px;
 }
-
 .card > p:last-of-type {
   border-bottom: solid #e2e3e9 1px;
   margin-bottom: 2.07em;
 }
-
 .card--middle > p:last-of-type {
   border-bottom: solid #b3b5c6 1px;
 }
-
 .card__btn {
   padding-top: 0.99em;
   padding-bottom: 0.99em;
-  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
   border-radius: 7px;
 }
-
 .card__btn--middle {
   background: white;
 }
-
 .card__link {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 0.9em;
   color: white;
 }
-
 .card__link--middle {
   color: #696fdd;
 }
-
 .card--middle {
   z-index: 2;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 3.9em;
   padding-bottom: 3.57em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to bottom, #a3a8f0, #696fdd);
   color: white;
 }
@@ -261,21 +195,22 @@ body {
   body {
     background-color: rgba(247, 247, 247, 0.993);
   }
+
   .container {
     background: url("../asset/images/bg-top.svg") 195px -40px no-repeat;
     padding-left: 2em;
     padding-right: 2em;
   }
+
   .header {
     margin-top: 4.6em;
     margin-bottom: 0.5em;
   }
+
   .group-cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .card {
     width: 260px;
     margin-left: 0;
@@ -299,4 +234,3 @@ body {
     margin-bottom: 0.5em;
   }
 }
-/*# sourceMappingURL=main.css.map */

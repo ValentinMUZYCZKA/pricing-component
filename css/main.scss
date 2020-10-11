@@ -118,7 +118,6 @@ body{
     padding-right: 2.2em;
     padding-top: 2.45em;
     padding-bottom: 0em;
-    
 
     &__title{
         font-size: 1.2em;
@@ -172,43 +171,20 @@ body{
     }
     & > p:last-of-type{
         border-bottom: solid $MidLightGrayishBlue 1px;
-        margin-bottom: 2.08em;
+        margin-bottom: 2.07em;
     }
     &--middle > p:last-of-type{
         border-bottom: solid $LightGrayishBlue 1px;
     }
 
     &__btn{
-        padding-top: 0.98em;
-        padding-bottom: 0.98em;
+        padding-top: 0.99em;
+        padding-bottom: 0.99em;
         background: $cardBtn;
         border-radius: 7px;
-        border: solid $white 1px;
-
-  
-
-        &:hover{
-            background: $white;
-            border: solid $btnPurple 1px;
-            
-            & .card__link{
-                color: $btnPurple;
-            }
-        }
-
         &--middle{
             background: $white;
-            border: solid $white 1px;
-
-            &:hover{
-                background: $btnPurple;
-                border: solid $white 1px;
-                
-                & .card__link--middle{
-                    color: $white;
-                }
-            }
-        } 
+        }   
     }
     &__link{
         text-transform: uppercase;
@@ -227,9 +203,6 @@ body{
         padding-bottom: 3.57em;
         background: $cardMiddle;
         color: $white;
-    }
-    &>a{
-        text-decoration: none;
     }
 }
 @media screen and (max-width: 375px) {
