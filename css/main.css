@@ -74,13 +74,13 @@ body {
 }
 
 .switch__btn--input:hover + .switch__btn--slider {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(163, 168, 240, 0.5)), to(rgba(105, 111, 221, 0.5)));
-  background: linear-gradient(to left, rgba(163, 168, 240, 0.5), rgba(105, 111, 221, 0.5));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(163, 168, 240, 0.5)), to(rgba(105, 111, 221, 0.5)));
+  background: linear-gradient(to right, rgba(163, 168, 240, 0.5), rgba(105, 111, 221, 0.5));
 }
 
 .switch__btn--input:checked + .switch__btn--slider {
-  background: -webkit-gradient(linear, right top, left top, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(to left, #a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
 }
 
 .switch__btn--input:checked + .switch__btn--slider:before {
@@ -100,8 +100,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, right top, left top, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(to left, #a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 34px;
@@ -216,7 +216,7 @@ body {
 
 .card > p:last-of-type {
   border-bottom: solid #e2e3e9 1px;
-  margin-bottom: 2.15em;
+  margin-bottom: 2.08em;
 }
 
 .card--middle > p:last-of-type {
@@ -224,15 +224,35 @@ body {
 }
 
 .card__btn {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background: -webkit-gradient(linear, right top, left top, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(to left, #a3a8f0, #696fdd);
+  padding-top: 0.98em;
+  padding-bottom: 0.98em;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
   border-radius: 7px;
+  border: solid white 1px;
+}
+
+.card__btn:hover {
+  background: white;
+  border: solid #696fdd 1px;
+}
+
+.card__btn:hover .card__link {
+  color: #696fdd;
 }
 
 .card__btn--middle {
   background: white;
+  border: solid white 1px;
+}
+
+.card__btn--middle:hover {
+  background: #696fdd;
+  border: solid white 1px;
+}
+
+.card__btn--middle:hover .card__link--middle {
+  color: white;
 }
 
 .card__link {
@@ -252,9 +272,13 @@ body {
   margin-bottom: 0;
   padding-top: 3.9em;
   padding-bottom: 3.57em;
-  background: -webkit-gradient(linear, left bottom, left top, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(to top, #a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to bottom, #a3a8f0, #696fdd);
   color: white;
+}
+
+.card > a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 375px) {
